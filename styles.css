@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#videoContainer {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    object-position: center;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+
+    opacity: 0;
+
+    object-fit: cover;
+}
+
+
+#container {
+    display: flex;
+    z-index: 2;
+    height: 40%;
+    width: 40%;
+    min-height: 400px;
+    min-width: 600px;
+
+    background-color: rgba(131, 255, 22, 0.284);
+    border-radius: 30px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#container:hover {
+    cursor: pointer;
+}
+
+#button {
+    display: flex;
+    height: 70px;
+    width: 280px;
+
+    background-color: rgb(218, 224, 241);
+    border-radius: 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+#button:hover {
+    cursor: pointer;
+}
+#button[data-active="true"] {
+    background-color: rgb(183, 193, 218);
+}
+
+#icon {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+
+    background-image: url("assets/outlookIcon.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#icon:hover {
+    cursor: pointer;
+}
+
+#text {
+    font-size: 20px;
+}
+#text:hover {
+    cursor: pointer;
+}
