@@ -26,7 +26,7 @@ var videoOpacity = 0;
 
 const interval = setInterval(function() {
     document.querySelectorAll("video").forEach((i) => {
-        i.style.opacity = videoOpacity += 0.01;
+        i.style.opacity = videoOpacity += 0.001;
         if (videoOpacity >= 1) {
             clearInterval(interval);
         }
